@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRUDE Operation</title>
+</head>
+<body>
+    <script>
+        function formvalidation(){
+            name = document.myform.name.value;
+            roll = document.myform.roll.value;
+            class1 = document.myform.class.value;
+            stream = document.myform.stream.value;
+            depart = document.myform.depart.value;
+
+            if (name == null || name == "" || name == undefined){
+                alert("Name Field is required.....");
+            }
+            else if(roll == null || roll == "") {
+                alert("Roll number required");
+
+            }
+            else if (class1 == null || class1 == ""){
+                alert("Class name required......")
+            }
+            else if (stream == null || stream == ""){
+                alert("Stream also required.....")
+            }
+            else if (depart == null || depart == ""){
+                alert("In which departmen do you studied please mention")
+            }
+            else{
+                alert("Form Submitted Successfully....")
+            }
+        }
+    </script>
+</body>
+</html>
